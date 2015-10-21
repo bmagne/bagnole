@@ -2,11 +2,11 @@
 <html>
 <head>
 	<title>Login - inscription</title>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="globalsheet" href="css/global.css">
 	<script src="js/jquery.js"></script>
 	<script src="js/bagnole.js"></script>
 </head>
-<body>
-
+<body id="login">
+	
 </body>
 </html>

@@ -1,0 +1,16 @@
+/***********************  GLOBAL  ****************************/
+html,body{margin:0 auto;}
+/***********************  MENU  ****************************/
+#menu_container{width: 100%;background-color: #3f457f;color: #FFF;height: 40px}
+#menu_container ul{text-align: center;}
+#menu_container ul li{margin:0 10px;list-style-type: none;display: inline-block;}
+#menu_container ul li a{color: #fff;text-decoration: none;line-height: 40px}
+/***********************  ACCUEIL  ****************************/
+
+/***********************  VOITURE  ****************************/
+
+/***********************  CONTACT  ****************************/
+
+/***********************  LOGIN  ****************************/
+
+/***********************  PROFIL  ****************************/
