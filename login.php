@@ -10,7 +10,7 @@ include('menu.php');
 	<div id="authentication_container">
 		<div id="login_container">
 			
-			<form class="form-horizontal" action="login.php" method="POST">
+			<form class="form-horizontal" action="veriflogin.php" method="POST">
 				<fieldset>
 
 					<!-- Form Name -->
@@ -20,7 +20,7 @@ include('menu.php');
 					<div class="form-group">
 					  <label class="col-md-4 control-label" for="email">Votre email</label>  
 					  <div class="col-md-4">
-					  <input id="email" name="email" type="text" placeholder="email" class="form-control input-md" required="">
+					  <input id="mail" name="mail" type="text" placeholder="email" class="form-control input-md" required="">
 					    
 					  </div>
 					</div>
