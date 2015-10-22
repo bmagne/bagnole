@@ -16,9 +16,11 @@ include('config.php');
 
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css">
 
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="fancybox/source/jquery.fancybox.js"></script>
 
 
 	<div class="navbar-wrapper">
