@@ -1,5 +1,6 @@
 <?php 
 include('config.php');
+session_start();
 
 error_reporting(E_ALL | E_WARNING | E_NOTICE);
 
@@ -17,7 +18,6 @@ if ($prep->rowCount() ==  1) {
 		$_SESSION['user'] = $value;
 	}
 	$_SESSION['connect'] = 1;
-	print_r($_SESSION['user']);
 	header('Location: accueil.php');
 }
 

@@ -50,16 +50,21 @@ include('config.php');
 	                                    
 	                            </ul>
 	                            <?php 
-	                            if($_SESSION['connect'] != 1){
+	                            if($_SESSION['connect'] == 1){
 	                            	echo '
 	                            <ul class="nav navbar-nav pull-right">
-	                                <li class=""><a href="login.php">Login</a></li>
+	                                <li class=""><a href="profil.php">'.$_SESSION['user']['first_name'].'</a>
+	                                </li>
+					                <li class="">    
+	                           			<a href="config.php?destroy=1"><i class="glyphicon glyphicon-log-out" style="font-size :"> </i></a>
+	                           		</li>
 	                            </ul>';
+
 	                        } 
 	                        else {
 	                        	echo '
-	                        	<ul class="nav navbar-nav pull-right">
-	                                <li class=""><a href="profil.php">PROFIL</a></li>
+	                            <ul class="nav navbar-nav pull-right">
+	                                <li class=""><a href="login.php">Login</a></li>
 	                            </ul>';
 	                        }
 	                        ?>
