@@ -1,10 +1,11 @@
 <?php 
-
+session_start();
 include('config.php');
 
 ?>
 
 <!doctype html>
+
 <html>
 	<head>
 		<link rel="stylesheet" href="css/global.css">
@@ -36,7 +37,7 @@ include('config.php');
 	                        </div>
 	                        <div id="navbar" class="navbar-collapse collapse">
 	                            <ul class="nav navbar-nav">
-	                                <li class="active"><a href="accueil.php" class="">Home</a></li>
+	                                <li class="active"><a href="accueil.php" class="">Accueil</a></li>
 	                                
 	                                    <li class=" dropdown"><a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Voitures <span class="caret"></span></a>
 	                                        <ul class="dropdown-menu">
@@ -48,9 +49,26 @@ include('config.php');
 	                                </li>
 	                                    
 	                            </ul>
+	                            <?php 
+	                            if($_SESSION['connect'] == 1){
+	                            	echo '
+	                            <ul class="nav navbar-nav pull-right">
+	                                <li class=""><a href="profil.php">'.$_SESSION['user']['first_name'].'</a>
+	                                </li>
+					                <li class="">    
+	                           			<a href="config.php?destroy=1"><i class="glyphicon glyphicon-log-out" style="font-size :"> </i></a>
+	                           		</li>
+	                            </ul>';
+
+	                        } 
+	                        else {
+	                        	echo '
 	                            <ul class="nav navbar-nav pull-right">
 	                                <li class=""><a href="login.php">Login</a></li>
-	                            </ul>
+	                            </ul>';
+	                        }
+	                        ?>
+
 	                        </div>
 	                    </div>
 	                </nav>
