@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Jeu 22 Octobre 2015 à 09:49
+-- Généré le :  Jeu 22 Octobre 2015 à 13:05
 -- Version du serveur :  5.6.26
 -- Version de PHP :  5.6.12
 
@@ -28,9 +28,17 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `AVOIR` (
   `id` int(11) NOT NULL,
-  `id_CAR_OPTIONS` int(11) NOT NULL,
-  `id_CAR` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `id_CAR` int(11) DEFAULT NULL,
+  `id_CAR_OPTIONS` int(11) DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `AVOIR`
+--
+
+INSERT INTO `AVOIR` (`id`, `id_CAR`, `id_CAR_OPTIONS`) VALUES
+(1, 5, 11),
+(2, 5, 12);
 
 -- --------------------------------------------------------
 
@@ -42,15 +50,15 @@ CREATE TABLE IF NOT EXISTS `BUY` (
   `id` int(11) NOT NULL,
   `id_USER` int(11) DEFAULT NULL,
   `id_CAR` int(11) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 --
 -- Contenu de la table `BUY`
 --
 
 INSERT INTO `BUY` (`id`, `id_USER`, `id_CAR`) VALUES
-(1, 6, 1),
-(2, 6, 4);
+(3, 8, 5),
+(4, 8, 6);
 
 -- --------------------------------------------------------
 
@@ -64,17 +72,15 @@ CREATE TABLE IF NOT EXISTS `CAR` (
   `price` int(11) DEFAULT NULL,
   `color` varchar(25) DEFAULT NULL,
   `id_CAR_TYPE` int(11) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 --
 -- Contenu de la table `CAR`
 --
 
 INSERT INTO `CAR` (`id`, `model`, `price`, `color`, `id_CAR_TYPE`) VALUES
-(1, 'BMW x6', 56000, 'blanc', 5),
-(2, 'Audi Q7', 55000, 'noir', 5),
-(3, 'BMW 752i', 67000, 'noir', 6),
-(4, 'Audi R8', 78000, 'rouge', 6);
+(5, 'BMW x6', 45000, 'blanc', 9),
+(6, 'Audi Q7', 45000, 'noir', 9);
 
 -- --------------------------------------------------------
 
@@ -86,19 +92,15 @@ CREATE TABLE IF NOT EXISTS `CAR_OPTIONS` (
   `id` int(11) NOT NULL,
   `name` varchar(25) DEFAULT NULL,
   `price` int(11) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
 
 --
 -- Contenu de la table `CAR_OPTIONS`
 --
 
 INSERT INTO `CAR_OPTIONS` (`id`, `name`, `price`) VALUES
-(5, 'toit ouvrant', 1500),
-(6, 'jantes alu', 890),
-(7, 'cuir', 1300),
-(8, 'ordinateur de bord', 790),
-(9, 'GPS', 640),
-(10, 'siège en cuir', 1000);
+(11, 'toit ouvrant', 1500),
+(12, 'GPS', 600);
 
 -- --------------------------------------------------------
 
@@ -109,17 +111,14 @@ INSERT INTO `CAR_OPTIONS` (`id`, `name`, `price`) VALUES
 CREATE TABLE IF NOT EXISTS `CAR_TYPE` (
   `id` int(11) NOT NULL,
   `type` varchar(25) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
 
 --
 -- Contenu de la table `CAR_TYPE`
 --
 
 INSERT INTO `CAR_TYPE` (`id`, `type`) VALUES
-(5, '4x4'),
-(6, 'berline'),
-(7, 'citadine'),
-(8, 'coupé');
+(9, '4x4');
 
 -- --------------------------------------------------------
 
@@ -141,15 +140,15 @@ CREATE TABLE IF NOT EXISTS `USER` (
   `country` varchar(25) DEFAULT NULL,
   `id_USER_TYPE` int(11) DEFAULT NULL,
   `password` varchar(25) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
 
 --
 -- Contenu de la table `USER`
 --
 
 INSERT INTO `USER` (`id`, `first_name`, `last_name`, `birth_date`, `phone_number`, `mail`, `address1`, `address2`, `post_code`, `city`, `country`, `id_USER_TYPE`, `password`) VALUES
-(6, 'user', 'user', '2015-10-14', '234567890', 'user@viacesi.fr', '44 rue de Zeus', NULL, '78000', 'VErsailles', 'France', 3, 'azerty'),
-(7, 'admin', 'admin', '2015-10-13', '12345678', 'admin@viacesi.fr', '78 rue du vent', NULL, '44000', 'Nantes', 'France', 4, 'azerty');
+(8, 'user', 'user', '2015-10-13', NULL, 'user@viacesi.fr', NULL, NULL, NULL, NULL, NULL, 5, 'azerty'),
+(9, 'admin', 'admin', NULL, NULL, 'admin@viacesi.fr', NULL, NULL, NULL, NULL, NULL, 6, 'azerty');
 
 -- --------------------------------------------------------
 
@@ -160,15 +159,15 @@ INSERT INTO `USER` (`id`, `first_name`, `last_name`, `birth_date`, `phone_number
 CREATE TABLE IF NOT EXISTS `USER_TYPE` (
   `id` int(11) NOT NULL,
   `type` varchar(25) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 --
 -- Contenu de la table `USER_TYPE`
 --
 
 INSERT INTO `USER_TYPE` (`id`, `type`) VALUES
-(3, 'user'),
-(4, 'admin');
+(5, 'user'),
+(6, 'admin');
 
 --
 -- Index pour les tables exportées
@@ -178,9 +177,9 @@ INSERT INTO `USER_TYPE` (`id`, `type`) VALUES
 -- Index pour la table `AVOIR`
 --
 ALTER TABLE `AVOIR`
-  ADD PRIMARY KEY (`id`,`id_CAR_OPTIONS`),
-  ADD UNIQUE KEY `FK_AVOIR_id_CAR` (`id_CAR`),
-  ADD KEY `FK_AVOIR_id_CAR_OPTIONS` (`id_CAR_OPTIONS`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `fk_AVOIR_CAR1_idx` (`id_CAR`),
+  ADD KEY `fk_AVOIR_CAR_OPTIONS1_idx` (`id_CAR_OPTIONS`);
 
 --
 -- Index pour la table `BUY`
@@ -227,35 +226,40 @@ ALTER TABLE `USER_TYPE`
 --
 
 --
+-- AUTO_INCREMENT pour la table `AVOIR`
+--
+ALTER TABLE `AVOIR`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+--
 -- AUTO_INCREMENT pour la table `BUY`
 --
 ALTER TABLE `BUY`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT pour la table `CAR`
 --
 ALTER TABLE `CAR`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT pour la table `CAR_OPTIONS`
 --
 ALTER TABLE `CAR_OPTIONS`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT pour la table `CAR_TYPE`
 --
 ALTER TABLE `CAR_TYPE`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT pour la table `USER`
 --
 ALTER TABLE `USER`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT pour la table `USER_TYPE`
 --
 ALTER TABLE `USER_TYPE`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 --
 -- Contraintes pour les tables exportées
 --
@@ -264,8 +268,8 @@ ALTER TABLE `USER_TYPE`
 -- Contraintes pour la table `AVOIR`
 --
 ALTER TABLE `AVOIR`
-  ADD CONSTRAINT `FK_AVOIR_id` FOREIGN KEY (`id`) REFERENCES `CAR` (`id`),
-  ADD CONSTRAINT `FK_AVOIR_id_CAR_OPTIONS` FOREIGN KEY (`id_CAR_OPTIONS`) REFERENCES `CAR_OPTIONS` (`id`);
+  ADD CONSTRAINT `fk_AVOIR_CAR1` FOREIGN KEY (`id_CAR`) REFERENCES `CAR` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `fk_AVOIR_CAR_OPTIONS1` FOREIGN KEY (`id_CAR_OPTIONS`) REFERENCES `CAR_OPTIONS` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Contraintes pour la table `BUY`
