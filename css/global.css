@@ -52,6 +52,8 @@ border: none;
 /***********************  VOITURE  ****************************/
 
 .car_container img{width:50%;}
+.fancybox_container{text-align: center;}
+.fancybox_container span{border-bottom: 1px solid black; display: block; margin: 0 auto 30px;width: 80%}
 
 /***********************  CONTACT  ****************************/
 
