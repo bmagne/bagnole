@@ -1,0 +1,51 @@
+[23-Oct-2015 15:21:47 Europe/Berlin] PHP Notice:  Use of undefined constant e_all - assumed 'e_all' in /Applications/MAMP/htdocs/msia/bagnole/config.php on line 10
+[23-Oct-2015 15:22:11 Europe/Berlin] PHP Notice:  Undefined index: connect in /Applications/MAMP/htdocs/msia/bagnole/menu.php on line 55
+[23-Oct-2015 15:22:11 Europe/Berlin] PHP Notice:  Use of undefined constant option - assumed 'option' in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 93
+[23-Oct-2015 15:22:11 Europe/Berlin] PHP Notice:  Use of undefined constant option - assumed 'option' in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 104
+[23-Oct-2015 15:22:11 Europe/Berlin] PHP Notice:  Use of undefined constant option - assumed 'option' in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 93
+[23-Oct-2015 15:22:11 Europe/Berlin] PHP Notice:  Use of undefined constant option - assumed 'option' in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 104
+[23-Oct-2015 15:23:30 Europe/Berlin] PHP Notice:  Use of undefined constant option - assumed 'option' in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 93
+[23-Oct-2015 15:23:30 Europe/Berlin] PHP Notice:  Use of undefined constant option - assumed 'option' in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 104
+[23-Oct-2015 15:23:30 Europe/Berlin] PHP Notice:  Use of undefined constant option - assumed 'option' in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 93
+[23-Oct-2015 15:23:30 Europe/Berlin] PHP Notice:  Use of undefined constant option - assumed 'option' in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 104
+[23-Oct-2015 15:23:55 Europe/Berlin] PHP Notice:  Use of undefined constant options - assumed 'options' in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 93
+[23-Oct-2015 15:23:55 Europe/Berlin] PHP Notice:  Use of undefined constant options - assumed 'options' in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 104
+[23-Oct-2015 15:23:55 Europe/Berlin] PHP Notice:  Use of undefined constant options - assumed 'options' in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 93
+[23-Oct-2015 15:23:55 Europe/Berlin] PHP Notice:  Use of undefined constant options - assumed 'options' in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 104
+[23-Oct-2015 15:24:07 Europe/Berlin] PHP Notice:  Use of undefined constant options - assumed 'options' in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 93
+[23-Oct-2015 15:24:07 Europe/Berlin] PHP Notice:  Use of undefined constant options - assumed 'options' in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 104
+[23-Oct-2015 15:24:07 Europe/Berlin] PHP Notice:  Use of undefined constant options - assumed 'options' in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 93
+[23-Oct-2015 15:24:07 Europe/Berlin] PHP Notice:  Use of undefined constant options - assumed 'options' in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 104
+[23-Oct-2015 15:46:03 Europe/Berlin] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 75
+[23-Oct-2015 15:46:03 Europe/Berlin] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 75
+[23-Oct-2015 15:49:04 Europe/Berlin] PHP Warning:  Illegal offset type in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 67
+[23-Oct-2015 15:49:04 Europe/Berlin] PHP Warning:  Illegal offset type in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 67
+[23-Oct-2015 15:49:11 Europe/Berlin] PHP Warning:  Illegal offset type in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 67
+[23-Oct-2015 15:49:11 Europe/Berlin] PHP Warning:  Illegal offset type in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 67
+[23-Oct-2015 15:49:12 Europe/Berlin] PHP Warning:  Illegal offset type in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 67
+[23-Oct-2015 15:49:12 Europe/Berlin] PHP Warning:  Illegal offset type in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 67
+[23-Oct-2015 15:49:12 Europe/Berlin] PHP Warning:  Illegal offset type in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 67
+[23-Oct-2015 15:49:12 Europe/Berlin] PHP Warning:  Illegal offset type in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 67
+[23-Oct-2015 15:49:12 Europe/Berlin] PHP Warning:  Illegal offset type in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 67
+[23-Oct-2015 15:49:12 Europe/Berlin] PHP Warning:  Illegal offset type in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 67
+[23-Oct-2015 15:49:18 Europe/Berlin] PHP Notice:  Undefined variable: bagnole in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 67
+[23-Oct-2015 15:49:18 Europe/Berlin] PHP Notice:  Undefined variable: bagnole in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 67
+[23-Oct-2015 15:49:18 Europe/Berlin] PHP Notice:  Undefined variable: bagnole in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 74
+[23-Oct-2015 15:49:30 Europe/Berlin] PHP Notice:  Undefined offset: 0 in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 67
+[23-Oct-2015 15:49:30 Europe/Berlin] PHP Notice:  Undefined offset: 0 in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 67
+[23-Oct-2015 15:49:31 Europe/Berlin] PHP Notice:  Undefined offset: 0 in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 67
+[23-Oct-2015 15:49:31 Europe/Berlin] PHP Notice:  Undefined offset: 0 in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 67
+[23-Oct-2015 15:49:31 Europe/Berlin] PHP Notice:  Undefined offset: 0 in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 67
+[23-Oct-2015 15:49:31 Europe/Berlin] PHP Notice:  Undefined offset: 0 in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 67
+[23-Oct-2015 15:49:32 Europe/Berlin] PHP Notice:  Undefined offset: 0 in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 67
+[23-Oct-2015 15:49:32 Europe/Berlin] PHP Notice:  Undefined offset: 0 in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 67
+[23-Oct-2015 15:49:32 Europe/Berlin] PHP Notice:  Undefined offset: 0 in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 67
+[23-Oct-2015 15:49:32 Europe/Berlin] PHP Notice:  Undefined offset: 0 in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 67
+[23-Oct-2015 16:13:04 Europe/Berlin] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 75
+[23-Oct-2015 16:13:04 Europe/Berlin] PHP Notice:  Undefined index: name in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 75
+[23-Oct-2015 16:14:07 Europe/Berlin] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 77
+[23-Oct-2015 16:14:07 Europe/Berlin] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 77
+[23-Oct-2015 16:14:07 Europe/Berlin] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 77
+[23-Oct-2015 16:14:07 Europe/Berlin] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 77
+[23-Oct-2015 16:31:19 Europe/Berlin] PHP Notice:  Undefined variable: option in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 76
+[23-Oct-2015 16:31:32 Europe/Berlin] PHP Notice:  Undefined variable: option in /Applications/MAMP/htdocs/msia/bagnole/voiture.php on line 76
